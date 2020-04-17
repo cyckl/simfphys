@@ -1,5 +1,5 @@
 # cyckl's simpfhys collection
-Collection of lua spawnmenu entries for Digger's simpfhys cars (Garry's Nod)
+Collection of lua spawnmenu entries for Digger's simpfhys cars (Garry's Mod)
 
 ## Features and bugs
 * Electric conversions for three cars with proper gearing and fueltype
