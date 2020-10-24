@@ -1,4 +1,4 @@
-local Category = "cyckl's Electric Swaps"
+local Category = "CycklElectric"
 
 -- Porsche 911 (901) --
 local V = {
