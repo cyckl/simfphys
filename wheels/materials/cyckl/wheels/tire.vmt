@@ -5,7 +5,7 @@
 	"$nodecal" "1"
 	"$nocull" "1"
 	"$allowalphatocoverage" "1"
-	"$colorfix" "{255 255 255}"
+	"$colorfix" "{100 100 100}"
 	"Proxies"
 	{
 		"Equals"
