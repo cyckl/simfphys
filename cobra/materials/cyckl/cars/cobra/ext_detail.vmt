@@ -1,0 +1,33 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "cyckl/cars/cobra/ext_detail"
+	"$bumpmap" "cyckl/cars/cobra/ext_detail_map"
+	"$nodecal" "1"
+	"$phong" 1
+	"$phongexponent" 10
+	"$phongboost" 1
+	"$phongfresnelranges" "[1 1 1]"
+	"$rimlight" 1
+	"$rimlightboost" 0.75
+	"$phongfix" "{1 1 1}"
+	"$colorfix" "{255 255 255}"
+	Proxies
+	{
+		Equals
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+		Equals
+		{
+			srcVar1	$colorfix
+			resultVar $phongtint
+		}
+		Add
+		{
+			srcVar1 $phongfix
+			srcVar2 $phongtint
+			resultVar $phongtint
+		}
+	}
+}

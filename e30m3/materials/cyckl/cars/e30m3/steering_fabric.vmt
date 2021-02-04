@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "cyckl/cars/e30m3/steering_fabric"
+	"$bumpmap" "cyckl/cars/e30m3/steering_fabric_map"
+	"$nodecal" "1"
+	"$nocull" "1"
+	"$allowalphatocoverage" "1"
+	"$colorfix" "{100 100 100}"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+}

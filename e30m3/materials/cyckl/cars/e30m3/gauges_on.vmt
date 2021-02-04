@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "cyckl/cars/e30m3/gauges_on"
+	"$bumpmap" "cyckl/shared/generic_map"
+	"$selfillummask" "cyckl/cars/e30m3/gauges_on_mask"
+	"$selfillum" "1"
+	"$nodecal" "1"
+	"$phong" "1" 
+	"$phongboost" "0.08" 
+	"$phongexponent" 3
+	"$phongfresnelranges" "[1 1 1]" 
+	"$colorfix" "{255 255 255}"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+
+}
