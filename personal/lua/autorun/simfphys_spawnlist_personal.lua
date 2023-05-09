@@ -240,6 +240,119 @@ list.Set("simfphys_vehicles", "sim_fphys_e30m3_cyckl_s55b30_drift", V)
 
 -- BMW E30 M3 Electric --
 local V = {
+	Name = "BMW E30 M3",
+	Model = "models/cyckl/e30m3/ext.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = Category,
+	Members = {
+		ModelInfo = {
+			Color = Color(0, 0, 0),
+			Bodygroups = {1, 1, 0},
+		},
+		Mass = 1600,
+		MaxHealth = 3000,
+		FuelType = FUELTYPE_ELECTRIC,
+		FuelFillPos = Vector(-58, -30, 20),
+		LightsTable = "e30m3",
+		CustomWheels = true,
+		CustomSuspensionTravel = 15,
+		CustomWheelModel = "models/cyckl/wheels/style5_16.mdl",
+		CustomWheelPosFL = Vector(56, 26, 11),
+		CustomWheelPosFR = Vector(56, -26, 11),
+		CustomWheelPosRL = Vector(-43.2, 27, 11),
+		CustomWheelPosRR = Vector(-43.2, -27, 11),
+		CustomWheelAngleOffset = Angle(0, 0, 0),
+		CustomMassCenter = Vector(2, 0, -3),
+		CustomSteerAngle = 35,
+		SeatOffset = Vector(-1, -12, 34),
+		SeatPitch = -8,
+		SeatYaw = 90,
+		Attachments = {
+			{
+				model = "models/cyckl/e30m3/int.mdl",
+				color = Color(255, 255, 255, 255),
+				useVehicleColor = false,
+				pos = Vector(0, 0, 0),
+				ang = Angle(0, 0, 0),
+				nosolid = true,
+			},
+			{
+				model = "models/cyckl/plates/d.mdl",
+				color = Color(255, 255, 255, 255),
+				useVehicleColor = false,
+				pos = Vector(-77.5, 0, 19),
+				ang = Angle(-12, 180, 0),
+				nosolid = true
+			},
+			{
+				model = "models/cyckl/plates/d.mdl",
+				color = Color(255, 255, 255, 255),
+				useVehicleColor = false,
+				pos = Vector(86, 0, 11),
+				ang = Angle(0, 0, 0),
+				nosolid = true
+			}
+		},
+		PassengerSeats = {
+			{
+				pos = Vector(6, -14, 2),
+				ang = Angle(0, -90, 20)
+			},
+			{
+				pos = Vector(-20, 12, 2),
+				ang = Angle(0, -90, 20)
+			},
+			{
+				pos = Vector(-20, -12, 2),
+				ang = Angle(0, -90, 20)
+			},
+		  },
+		FrontHeight = 9,
+		FrontConstant = 200000,
+		FrontDamping = 4000,
+		FrontRelativeDamping = 4500,
+		RearHeight = 10,
+		RearConstant = 200000,
+		RearDamping = 4000,
+		RearRelativeDamping = 4500,
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		TurnSpeed = 8,
+		MaxGrip = 60,
+		Efficiency = 1.0,
+		GripOffset = 0,
+		BrakePower = 50,
+		IdleRPM = 750,
+		LimitRPM = 7500,
+		PeakTorque = 400,
+		PowerbandStart = 2350,
+		PowerbandEnd = 5500,
+		Turbocharged = false,
+		PowerBias = 1,
+		EngineSoundPreset = 0,
+		Sound_Idle = "cyckl/cars/e30m3/e30_idle.wav",
+        Sound_IdlePitch = 1,
+        Sound_IdleVolume = 2,
+		Sound_Mid = "cyckl/cars/e30m3/e30_on_5000.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 1,
+		Sound_MidFadeOutRPMpercent = 100,
+		Sound_MidFadeOutRate = 1,
+		Sound_High = "cyckl/cars/e30m3/e30_on_8500.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 100,
+		Sound_HighFadeInRate = 1,
+		Sound_Throttle = "common/null.wav",
+        Sound_ThrottleVolume = 0,
+		DifferentialGear = 0.29,
+		Gears = {-0.27, 0.00, 0.24, 0.43, 0.65, 0.85, 1.00, 1.18}
+	}
+}
+list.Set("simfphys_vehicles", "sim_fphys_e30m3_cyckl_gen2", V)
+
+-- BMW E30 M3 Electric --
+local V = {
 	Name = "BMW E30 M3 Electric",
 	Model = "models/cyckl/e30m3/ext.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
