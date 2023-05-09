@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "cyckl/wheels/style5/tire"
+	"$bumpmap" "cyckl/wheels/style5/tire_map"
+	"$nodecal" "1"
+	"$nocull" "1"
+	"$allowalphatocoverage" "1"
+	"$colorfix" "{120 120 120}"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+}
