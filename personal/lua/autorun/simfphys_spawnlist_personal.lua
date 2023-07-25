@@ -238,7 +238,7 @@ local V = {
 }
 list.Set("simfphys_vehicles", "sim_fphys_e30m3_cyckl_s55b30_drift", V)
 
--- BMW E30 M3 Electric --
+-- BMW E30 M3 Standard --
 local V = {
 	Name = "BMW E30 M3",
 	Model = "models/cyckl/e30m3/ext.mdl",
@@ -251,7 +251,6 @@ local V = {
 		},
 		Mass = 1600,
 		MaxHealth = 3000,
-		FuelType = FUELTYPE_ELECTRIC,
 		FuelFillPos = Vector(-58, -30, 20),
 		LightsTable = "e30m3",
 		CustomWheels = true,
@@ -277,7 +276,7 @@ local V = {
 				nosolid = true,
 			},
 			{
-				model = "models/cyckl/plates/d.mdl",
+				model = "models/cyckl/plates/fa.mdl",
 				color = Color(255, 255, 255, 255),
 				useVehicleColor = false,
 				pos = Vector(-77.5, 0, 19),
@@ -285,7 +284,7 @@ local V = {
 				nosolid = true
 			},
 			{
-				model = "models/cyckl/plates/d.mdl",
+				model = "models/cyckl/plates/fa.mdl",
 				color = Color(255, 255, 255, 255),
 				useVehicleColor = false,
 				pos = Vector(86, 0, 11),
